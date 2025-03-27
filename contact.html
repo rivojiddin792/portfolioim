@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    p {
+        color: grey;
+    }
+
+    .image img {
+        animation: slide-from-right 1.5s ease-in-out;
+    }
+
+
+
+    .text h1 {
+        animation: slide-from-left 1.5s ease-in-out;
+    }
+
+    .text p a {
+        animation: slide-from-right 1.5s ease-in-out;
+    }
+
+    @keyframes slide-from-left {
+        from {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slide-from-right {
+        from {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes shake {
+
+        0%,
+        100% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(-5px);
+        }
+
+        50% {
+            transform: translateX(5px);
+        }
+
+        75% {
+            transform: translateX(-5px);
+        }
+    }
+
+    @keyframes shake {
+
+        0%,
+        100% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(-50px);
+        }
+
+        50% {
+            transform: translateX(5px);
+        }
+
+        75% {
+            transform: translateX(-5px);
+        }
+    }
+
+    @keyframes slide-from-left {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slide-from-right {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.webp" width="100px">
+            <a href="about.html"><button type="button" class="btn btn-dark" class="btn">About me</button></a>
+            <a href="index.html"><button type="button" class="btn btn-dark"
+                    style="position: absolute; right: 630px;">Home</button></a>
+            <div class="icon">
+                <a href="https://www.instagram.com/rustamovic_cs/"><i class="fa-brands fa-instagram"
+                        style="color: white; font-size: 50px;"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="text">
+        <h1>Contact.</h1>
+        <p>Get in touch with me via social media or send me an email.</p>
+        <a href="https://www.instagram.com/rustamovic_cs/"><i class="fa-brands fa-instagram"
+                style="color: rgb(209, 4, 4); font-size: 50px;"></i></a>
+        <p style="position: absolute; top: 110px; left: 70px; color: red;"><b>my instagram profile</b></p>
+    </div>
+    <div class="image" style="position: absolute; top: 180px; right: 200px;">
+        <img src="batman.png" width="400">
+    </div>
+
+    <footer>
+        <p style="left: 200px; position: absolute; top: 40px;">©2025 Rivojiddin Komiljanov</p>
+    </footer>
+</body>
+
+</html>
